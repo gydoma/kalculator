@@ -1,14 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kalculator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <nav class="nav">
         <h1 class="nav--header">Kalculator</h1>
         <img src="res/logo.png" alt="Logo" class="nav--logo">
     </nav>
+    <div class="area">
+        <div class="calculator">
+            <div class="calculator--header">
+                <span class="calculator--header--minimize"></span>
+                <span class="calculator--header--maximize"></span>
+                <span class="calculator--header--close"></span>
+                <h2 class="calculator--header--title">Kalculator v0.1a</h2>
+            </div>
+            <div class="calculator--display">
+                <div class="calculator--display--partly"></div>
+                <div class="calculator--display--main"></div>
+            </div>
+            <div class="calculator--butttons">
+                <button class="calculator--button-operators calculator--button_C">C</button>
+                <button class="calculator--button-operators calculator--button_CE">CE</button>
+                <button class="calculator--button-operators calculator--button_POW">X<sup>2</sup></button>
+                <button class="calculator--button-operators calculator--button_DIV">÷</button>
+                <button class="calculator--button-defnumber calculator--button_7">7</button>
+                <button class="calculator--button-defnumber calculator--button_8">8</button>
+                <button class="calculator--button-defnumber calculator--button_9">9</button>
+                <button class="calculator--button-operators calculator--button_MUL">×</button>
+                <button class="calculator--button-defnumber calculator--button_4">4</button>
+                <button class="calculator--button-defnumber calculator--button_5">5</button>
+                <button class="calculator--button-defnumber calculator--button_6">6</button>
+                <button class="calculator--button-operators calculator--button_MIN">−</button>
+                <button class="calculator--button-defnumber calculator--button_1">1</button>
+                <button class="calculator--button-defnumber calculator--button_2">2</button>
+                <button class="calculator--button-defnumber calculator--button_3">3</button>
+                <button class="calculator--button-operators calculator--button_ADD">+</button>
+                <button class="calculator--button-defnumber calculator--button_SGN">±</button>
+                <button class="calculator--button-defnumber calculator--button_0">0</button>
+                <button class="calculator--button-defnumber calculator--button_PNT">.</button>
+                <button class="calculator--button-summarize calculator--button_SUM">=</button>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+Hét: 11.11
+Projekt: Calculator
+Haladási terv:
+1. óra: Önállóan 1)-es; 2. óra: megbeszéljük
+3. óra: Önállóan 2)-es; 4. óra: megbeszéljük
+5-6. óra: Arrows, Calculator tudásanyagának összefoglalása;
+Minden önálló munkát töltsön fel GitHub-ra vagy GitLab-ra – a repo linkjét küldje el email-ben a hemrichg@verebelyszki.hu
+címre – tárgy: órai munka (mm.dd); szövegként csak a link szerepeljen. Az 1. és 3. óra feladatai végén készüljön 1-1 commit,
+hogy lássam, hogyan haladt az adott órán. Osztályozni csak azt fogom, ha valaki nem adott be semmit (vagyis nem
+próbálkozott egyedül a megoldással), vagy, ha valaki gyorsabban haladva és jól működő kódot ad le.
+Happy hacking!
+Calculator
+1) Készítse el a UI-t, az alábbi leírás és minta szerint:
+- a bal felső sarokhoz keressen egy ingyenes számológép ikont
+- a címsor ’Calculator’ felirata és a vezérlőgombok elrendezéséhez használjon Flexbox-ot
+- a számológép szám és művelet gombjainak elrendezéséhez használjon Grid-et
+- a stílus kialakításához Bootstrap nem használható
+Minta:
+https://hf.nytta.hu/targyak/Frontend_programozas_(gyakorlat)/calculator/calculator1.gif
+2) Készítse el a működő számológépet az alábbiak és a minta szerint:
+- a számológép gombjai működjenek kattintásra és billentyű lenyomásra is
+- kattintásra és billentyű nyomásra is változzon láthatóan az adott gomb háttere
+- az ’x2
+’ gomb emelje négyzetre a nagy kijelzőn megjelenített számot
+(ennek a gombnak nem kell billentyűre működnie)
+- a ’±’ gomb szorozza meg ’-1’-el a nagy kijelzőn megjelenített számot
+(ennek a gombnak nem kell billentyűre működnie)
+- a ’.’ gomb jelenítse meg a nagy kijelzőn a tizedes pontot
+(nem szükséges vizsgálni, hogy van-e már tizedes pont a kijelzőn)
+- az alapműveletek ugyanúgy működnek: megjelenik a kis kijelzőn a műveleti jel
+- az ’=’ gomb behelyettesíti a nagy kijelzőre a kalkulált eredményt,
+valamint törli a kis kijelző tartalmát
+- a ’CE’ gomb csak a nagy kijelző tartalmát törli, majd 0-ra állítja; billentyű: ’Backspace’
+- a ’C’ gomb mindkét kijelző tartalmát törli, a nagy kijelzőt 0-ra állítja; billentyű: ’Delete’
+Minta:
+https://hf.nytta.hu/targyak/Frontend_programozas_(gyakorlat)/calculator/calculator2.gif
+3) Továbbfejlesztési lehetőség (szorgalmi):
+- implementálja a ’🗕’ (minimize) és ’🗖’ (maximize) gombokat
+- a címsorra kattintva a teljes számológép legyen mozdítható a képernyőn
+- a számológép jobb alsó sarkára kattintva legyen a mérete állítható
+-->
