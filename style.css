@@ -1,0 +1,121 @@
+.nav {
+  background-color: #111;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  margin: 0 0 30px 0;
+  box-shadow: 0px 15px 25px 0px #111;
+}
+.nav--header {
+  margin: 0;
+  color: #dfdfdf;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #1a1a1a;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  transition: 0.3s;
+}
+
+.area {
+  display: flex;
+  justify-content: center;
+}
+
+.calculator {
+  background-color: #0a0a0a;
+  border-radius: 15px 15px 45px 45px;
+  padding: 25px;
+}
+.calculator--header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-size: 0.75rem;
+  gap: 13%;
+}
+.calculator--header--controls {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.calculator--header--minimize {
+  background-color: #10af0a;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+}
+.calculator--header--minimize:hover {
+  background-color: #0a8f0a;
+}
+.calculator--header--maximize {
+  background-color: #f0a020;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+}
+.calculator--header--close {
+  background-color: #f04040;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+}
+.calculator--header--title {
+  color: #dadada;
+  margin: 0;
+}
+.calculator--display--partly {
+  margin: 15px 10px 10px 0;
+  text-align: right;
+  font-size: 1rem;
+  color: #dadada;
+}
+.calculator--display--separator {
+  background-color: #0f0f0f;
+  height: 2px;
+  border: none;
+}
+.calculator--display--main {
+  margin: 0 5px 20px 0;
+  text-align: right;
+  font-size: 2rem;
+  color: #dfdfdf;
+}
+.calculator--buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  width: 310px;
+}
+.calculator--buttons button {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  font-size: 2rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.calculator--buttons button:hover {
+  transform: scale(1.1);
+}
+.calculator--buttons button:active {
+  transform: scale(0.9);
+}
+.calculator--buttons .calculator--button-operators {
+  background-color: #6a6a6a;
+  color: #dadada;
+}
+.calculator--buttons .calculator--button-defnumber {
+  background-color: #3a3a3a;
+  color: #dfdfdf;
+}
+.calculator--buttons .calculator--button-summarize {
+  background-color: #f1a33c;
+  color: #fff;
+}
